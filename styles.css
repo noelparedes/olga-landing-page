@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.about-section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.title {
+    color: #004aad;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlight-text {
+    font-size: 18px;
+    color: #0084ff;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d43f1d;
+}
+
+.certifications img {
+    width: 100px;
+    margin: 10px;
+}
+
+.about-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+
