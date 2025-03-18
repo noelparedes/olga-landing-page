@@ -3,63 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olga lisset LLC</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Olga Lissete LLC</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('/components/nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                });
+        });
+    </script>
 </head>
 <body>
-    <!-- Barra superior de contacto -->
-    <div class="top-bar">
-        <a href="mailto:tuemail@ejemplo.com">Email:olgalissetellc@gmail.com</a>
-        <a href="tel:+123456789">Phone: 813-495-1821</a>
-    </div>
-    
     <!-- Navegación principal -->
-    <nav class="main-nav">
-        <img src="logo.png" alt="Logo de la empresa" class="logo">
-        <div class="nav-links">
-            <a href="#inicio">INICIO</a>
-            <a href="#nosotros">NOSOTROS</a>
-            <div class="dropdown">
-                <a href="#servicios" class="dropbtn">SERVICIOS</a>
-                <div class="dropdown-content">
-                    <a href="./owerservices.html">Our Services</a>
-                    <a href="#tile">We Specialized</a>
-                    
-                </div>
-            </div>
-            <a href="#galeria">GALERÍA</a>
-        </div>
-        <a href="./Contacts.html" class="contact-button">CONTACTS</a>
-    </nav>
+    <div id="nav-placeholder"></div>
     
     <!-- Banner principal -->
-    <div class="main-banner">
-        <div class="banner-overlay"></div>
-        <h1 class="banner-title">GALLERY</h1>
-    </div>
-    
-    <!-- Sección de Galería -->
-    <section class="gallery-section">
-        <h2 class="gallery-title">GALLERY PROJECT</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="imagen1.jpg" alt="Proyecto 1">
-            </div>
-            <div class="gallery-item">
-                <img src="imagen2.jpg" alt="Proyecto 2">
-            </div>
-            <div class="gallery-item">
-                <img src="imagen3.jpg" alt="Proyecto 3">
-            </div>
-            <div class="gallery-item">
-                <img src="imagen4.jpg" alt="Proyecto 4">
-            </div>
+    <section class="hero-section">
+        <div class="hero-overlay">
+        <img  src="/images/bg-centro.jpg" alt="Logo de la empresa">
         </div>
+        <h2 class="hero-text">We Offer Services Local and National</h2>
+        <h1 class="service-title">Commercial Cleaning Services</h1>
     </section>
     
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
-    </footer>
+    <!-- Barra de garantía -->
+    <div class="guarantee-bar">
+        <div class="guarantee-text">Quality & Professional Service Guaranteed</div>
+        <div class="guarantee-phone">813-686-4731</div>
+    </div>
+    
+    <!-- Sección de servicios -->
+    <section class="services-section">
+        <!-- Tarjeta de servicio COVID-19 -->
+        <div class="service-card">
+            <img src="./images/covid-19.jpg" alt="COVID-19 Sanitation" class="service-image">
+            <h2 class="service-card-title">COVID-19 SPECIAL SANITATION</h2>
+            <h3 class="service-card-subtitle">Covid-19 Commercial Cleaning Disinfecting Services</h3>
+            <p class="service-description">We clean and disinfect all contact points, door knobs, keyboards, telephones, desks, toilets, taps, sinks and everything in between. We will use a professional Antibacterial and Virucide heavy duty disinfectant cleaner approved by CDC and recommended by EPA Registered Disinfectants.</p>
+            <ul class="service-features">
+                <li>Clean and Disinfect all surfaces</li>
+                <li>Disinfect kitchen tables</li>
+                <li>Disinfect all door knobs</li>
+                <li>Clean and disinfect all bathrooms</li>
+                <li>Clean and disinfect all rooms</li>
+                <li>Clean and disinfect all tables</li>
+                <li>Clean + Disinfect keyboards + mouse + computer screen frames</li>
+            </ul>
+        </div>
+        
+        <!-- Tarjeta de servicio Limpieza Comercial -->
+        <div class="service-card">
+            <img src="./images/commercial-cleaning.jpg" alt="Commercial Cleaning" class="service-image">
+            <h2 class="service-card-title">Commercial Cleaning</h2>
+            <p class="service-description">As one of the top commercial office cleaning service providers in Central Florida, we clean all types of facilities large and small. We dust, wash the flooring, disinfect the washrooms, and more.</p>
+            <img src="./images/janitorial-home.jpg" alt="Janitorial Cleaning" class="service-image" style="margin-top: 20px;">
+            <h2 class="service-card-title" style="margin-top: 15px;">Janitorial Cleaning</h2>
+            <p class="service-description">Our professional janitors are equipped to handle any type of business cleaning task and perform quality checks to ensure a clean office space that meets our high standards of cleanliness.</p>
+        </div>
+    </section>
 </body>
 </html>
